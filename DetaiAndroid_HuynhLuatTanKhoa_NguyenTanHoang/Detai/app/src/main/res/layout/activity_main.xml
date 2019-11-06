@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@android:color/holo_orange_light">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xem thời tiết"
+        android:gravity="center"
+        android:textSize="27dp"
+        android:background="@android:color/holo_blue_dark"
+        android:textStyle="bold">
+
+    </TextView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/editextSearch"
+        android:layout_width="275dp"
+        android:layout_marginLeft="4dp"
+        android:hint="Thành phố,quốc gia"
+        android:layout_height="wrap_content">
+
+    </EditText>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/buttonSearch"
+        android:text="OK">
+
+    </Button>
+</LinearLayout>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/textviewName"
+    android:layout_marginTop="2dp"
+    android:textSize="20dp"
+    android:text="Tên thành phố">
+
+</TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textviewCountry"
+        android:layout_marginTop="2dp"
+        android:textSize="20dp"
+        android:text="Tên quốc gia">
+
+    </TextView>
+<ImageView
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:id="@+id/ImageIcon"
+    android:layout_marginTop="20dp"
+    android:layout_gravity="center">
+
+</ImageView>
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textviewTemp"
+        android:layout_marginTop="2dp"
+        android:textSize="35dp"
+        android:text="Nhiệt độ"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_gravity="center">
+
+    </TextView>
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:textSize="28dp"
+        android:text="Trạng thái"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_gravity="center"
+        android:id="@+id/textviewStatus">
+
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="3"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/humidity">
+
+            </ImageView>
+            <TextView
+                android:text="Độ ẩm"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:id="@+id/TextviewHumidity"
+                android:textSize="20dp"
+
+                android:gravity="center">
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/cloud">
+
+            </ImageView>
+            <TextView
+                android:text="Mây"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:id="@+id/TextviewMay"
+                android:textSize="20dp"
+                android:gravity="center">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/mill">
+
+            </ImageView>
+            <TextView
+                android:text="Gió"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:id="@+id/TextviewWind"
+                android:textSize="20dp"
+                android:gravity="center">
+
+            </TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:text="Ngày cập nhật"
+        android:layout_gravity="center"
+        android:textColor="@android:color/holo_blue_bright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:id="@+id/TextviewDay"
+        android:layout_marginTop="20dp">
+
+    </TextView>
+
+    <Button
+        android:layout_marginTop="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnChange"
+        android:text="Các ngày tiếp theo"
+        android:layout_gravity="center">
+
+    </Button>
+</LinearLayout>
